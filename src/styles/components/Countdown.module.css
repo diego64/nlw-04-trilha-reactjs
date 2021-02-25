@@ -6,7 +6,7 @@
     color: var(--title);
 }
 
-.countdownContainer > div { 
+.countdownContainer > div {
     flex: 1;
 
     display: flex;
@@ -14,26 +14,26 @@
     justify-content: space-evenly;
 
     background: var(--white);
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 60px rgba(0, 0 0, 0.05);
     border-radius: 5px;
     font-size: 8.5rem;
     text-align: center;
 }
 
-.countdownContainer > div span { 
+.countdownContainer > div span {
     flex: 1;
 }
 
-.countdownContainer > div span:first-child { 
-    border-right: 1px solid #F0F1F3;
+.countdownContainer > div span:fisrt-child {
+    border-right: 1px solid #f0f1f3;
 }
 
-.countdownContainer > div span:last-child { 
-    border-left: 1px solid #F0F1F3;
+.countdownContainer > div span:last-child {
+    border-left:1px solid #f0f1f3
 }
 
 .countdownContainer > span {
-    font-size: 6.25rem;
+    font-size: 6.35rem;
     margin: 0 0.5rem;
 }
 
@@ -59,7 +59,7 @@
     transition: background-color 0.2s;
 }
 
-.countdownButton:not(:disabled):hover { 
+.countdownButton:not(:disabled):hover {
     background: var(--blue-dark);
 }
 
@@ -77,4 +77,17 @@
     background: var(--white);
     color: var(--text);
     cursor: not-allowed;
+
+    border-bottom: 4px solid var(--green);
+}
+
+.countdownButton img {
+    position: absolute;
+    margin-left: 5.8rem;
+    margin-top: 0.07rem;
+
+}
+
+.countdownButtonActive:not(:disabled):hover img {
+    filter: brightness(0) invert(1);
 }
